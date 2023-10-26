@@ -11,7 +11,7 @@ export default function Header() {
 const Container = styled.div`
   height: 45px;
   background-color: brown;
-  width: 100vw;
+  width: 100%;
   position: fixed;
   top: 0;
 `;
