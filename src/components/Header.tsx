@@ -4,7 +4,7 @@ import styled from "styled-components";
 export default function Header() {
   return (
     <Container>
-      <Link>
+      <Link to={"/"}>
         <div>TeuPremium</div>
       </Link>
     </Container>
