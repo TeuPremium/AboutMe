@@ -1,79 +1,8 @@
-import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
+import { Button, Column, Container } from "./AboutMeStyles";
 
-export const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100vw;
-  position: absolute;
-  top: 70px;
-  padding: 20px;
-`;
-
-export const Column = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 85vw;
-  height: 85vh;
-  background-color: #76739956;
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
-  padding-top: 20px;
-  overflow-y: scroll;
-  padding-left: 35px;
-  padding-right: 35px;
-  box-sizing: border-box;
-  font-size: larger;
-  padding-bottom: 110px;
-  img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-  }
-
-  h1 {
-    margin: 0;
-    margin-left: 10px;
-  }
-
-  .role {
-    font-size: 1.2em;
-    color: #ffffffcc;
-    margin-top: 5px;
-  }
-  span {
-    display: flex;
-    align-items: center;
-  }
-  ul {
-    list-style-type: circle;
-    padding-left: 45px;
-  }
-
-  li {
-    margin-bottom: 5px;
-  }
-`;
-
-const Button = styled.button`
-  position: relative;
-  right: 23px;
-  background-color: #ffffff29;
-  width: 45%;
-  height: 25px;
-  display: flex;
-  border-radius: 10px;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px 35px;
-  position: absolute;
-  bottom: 45px;
-  left: 27.5%;
-`;
-
-export default function Body() {
+export default function AboutMe() {
+  const navigate = useNavigate();
   return (
     <Container>
       <Column>
@@ -90,10 +19,13 @@ export default function Body() {
         <br />
         <div>
           <p>
-            Sou estudante de Engenharia Eletrônica na UFPE e um apaixonado por
-            tecnologia. Adoro gatos e tenho um interesse especial em Machine
-            Learning com Python. Tenho habilidades nas seguintes áreas:
+            Olá, sou o Vinícius e sou um software developer e estudante de
+            Engenharia Eletrônica. Sou um apaixonado por tecnologia e gatos e
+            esse comigo no desenho é o pastel, meu gatinho cego.
+            <br />
+            Aqui estão algumas das minhas hard-skills:
           </p>
+
           <ul>
             <li>Front-end: HTML, CSS, JQuery, React.js, Styled components.</li>
             <li>
@@ -111,7 +43,7 @@ export default function Body() {
             <li>Inglês fluente.</li>
           </ul>
         </div>
-        <Button></Button>
+        <Button onClick={() => navigate("/")}>Voltar</Button>
       </Column>
     </Container>
   );

@@ -67,6 +67,7 @@ export const OptionBubble = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 25px 35px;
+  font-weight: 600;
   img {
     height: 33px;
     width: 33px;

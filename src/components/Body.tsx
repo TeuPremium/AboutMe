@@ -36,7 +36,7 @@ export default function Body() {
 
           <Link
             style={{ height: "0px" }}
-            to="https://github.com/TeuPremium"
+            to="https://www.linkedin.com/in/viniciusssb000/"
             target="_blank"
           >
             <OptionBubble>
