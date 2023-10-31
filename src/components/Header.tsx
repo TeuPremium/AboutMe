@@ -12,6 +12,7 @@ export default function Header() {
 }
 
 const Container = styled.div`
+  z-index: 2;
   height: 45px;
   background-color: #a24316;
   width: 100vw;
